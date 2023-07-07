@@ -1,0 +1,525 @@
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from influx.com/blog/interview-todd-zabel-janrain-google by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jul 2023 04:26:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http_equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link as="font" crossorigin="" href="assets/fonts/calibre-web-regular.woff2" rel="preload" type="font/woff2">
+<link as="font" crossorigin="" href="assets/fonts/calibre-web-medium.woff2" rel="preload" type="font/woff2">
+<link href="assets/main7dfc.css?1688613802" rel="stylesheet">
+<link href="feed.xml" rel="alternate" title="Customer Support Blog" type="application/rss+xml">
+<link href="../images/favicon.ico" rel="icon" type="image/png">
+<link href="http://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+<script crossorigin="anonymous" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" src="assets/javascripts/jquery-2.2.4.min.js"></script>
+<script src="assets/javascripts/navbar.js"></script>
+<script src="assets/javascripts/navbar_website.js"></script>
+<script src="assets/javascripts/campaign_monitor.js"></script>
+<title>Tech support KPIs and management - interview with Todd Zabel from Janrain and Google - Influx</title>
+<link href="interview-todd-zabel-janrain-google.html" rel="canonical">
+<meta content="Tech support KPIs and management - interview with Todd Zabel from Janrain and Google" name="title">
+<meta content="Todd Zabel has been helping customers and building support systems for more than ten years now, and he's done it at leading companies including Google, Janrain, and TiVo." name="description">
+<meta content="influx.com" property="og:site_name">
+<meta content="Tech support KPIs and management - interview with Todd Zabel from Janrain and Google - Influx" property="og:title">
+<meta content="Former consumer operations manager at Google, now director of global technical support at Janrain, talks us through managing global KPI's and how to pitch to Product, effectively." property="og:description">
+<meta content="https://influx.com/blog/interview-todd-zabel-janrain-google" property="og:url">
+<meta content="https://influx.com/blog/uploads/todd-janrain-illustration6.jpg" property="og:image">
+<meta content="en_US" property="og:locale">
+<meta content="@influxdotcom" name="twitter:site">
+<meta content="Tech support KPIs and management - interview with Todd Zabel from Janrain and Google - Influx" name="twitter:title">
+<meta content="Former consumer operations manager at Google, now director of global technical support at Janrain, talks us through managing global KPI's and how to pitch to Product, effectively." name="twitter:description">
+<meta content="https://influx.com/blog/uploads/todd-janrain-illustration6.jpg" name="twitter:image">
+<meta content="summary_large_image" name="twitter:card">
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46032476-1', 'auto');
+  ga('send', 'pageview');
+ </script>
+
+<script type="text/javascript">
+window._vwo_code = window._vwo_code || (function(){
+var account_id=553356,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=true,
+is_spa=1,
+hide_element='body',
+
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+window.settings_timer=setTimeout(function () {_vwo_code.finish() },settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+</script>
+
+</head>
+<body class="has-navbar">
+<div class="navbar_website">
+<div class="navbar_website__container">
+<a class="navbar_website__brand" href="../index.html" title="Influx Home"></a>
+<div class="navbar_website__items navbar_website__items-main">
+<div class="navbar_website__dropdown">
+<a href="#">Customer support</a>
+<div class="navbar_website__dropdown-items">
+<a href="../solutions/dedicated-support-teams.html">Dedicated support teams</a>
+<a href="../solutions/enterprise.html">Enterprise support teams</a>
+<a href="../solutions/part-time-agents.html">Part time agents</a>
+<a href="../solutions/support-as-a-service.html">Support as a Service</a>
+<a href="../solutions/custom.html">Custom teams</a>
+</div>
+</div>
+<div class="navbar_website__dropdown">
+<a href="#">Sales</a>
+<div class="navbar_website__dropdown-items">
+<a href="../solutions/dedicated-sales-teams.html">Dedicated sales teams</a>
+<a href="../solutions/sales-assistants.html">Sales assistants</a>
+</div>
+</div>
+<div class="navbar_website__dropdown">
+<a href="#">Clients</a>
+<div class="navbar_website__dropdown-items">
+<a href="../clients.html">Client testimonials</a>
+<a href="case-studies.html">Client case studies</a>
+<div class="navbar_website__separator"></div>
+<a href="../clear-the-inbox.html">Clear the inbox</a>
+<a href="../scalable-support-operations.html">Flexible support </a>
+<a href="../24-7-coverage.html">24/7 coverage</a>
+<a href="../improve-csat.html">Improve CSAT</a>
+<a href="../brand-match.html">Perfect brand match</a>
+</div>
+</div>
+<a href="../solutions/how-it-works.html">How it works</a>
+<a href="../pricing.html">Pricing</a>
+<div class="mobile">
+<a href="https://dashboard.influx.com/sign-in">Sign in</a>
+</div>
+</div>
+<div class="navbar_website__space"></div>
+<div class="navbar_website__items desktop signed-out navbar_website__items-right">
+<a href="https://dashboard.influx.com/sign-in">Sign in</a>
+</div>
+<a class="button button--primary signed-out desktop" href="../get-a-quote.html" id="get_a_quote_button" rel="canoncial">
+Contact sales
+</a>
+<a class="button button--primary signed-in" href="https://dashboard.influx.com/" id="dashboard_button" style="display: none">
+Dashboard
+</a>
+<a class="navbar_website__toggle">
+<div class="navbar_website__toggle-icon"></div>
+</a>
+</div>
+</div>
+<div class="navbar">
+<div class="navbar__container">
+<a class="navbar__toggle">
+<span>&nbsp;</span>
+<span>&nbsp;</span>
+<span>&nbsp;</span>
+</a>
+<a class="navbar__brand " href="index.html" title="Influx Blog Home">
+
+</a>
+<h5 class="navbar__title">Filter by:</h5>
+<div class="navbar__item">
+<a href="case-studies.html">Case studies</a>
+</div>
+<div class="navbar__item">
+<a href="customer-experience.html">Customer Experience</a>
+</div>
+<div class="navbar__item">
+<a href="customer-support.html">Customer Support</a>
+</div>
+<div class="navbar__item">
+<a href="product.html">Product</a>
+</div>
+<div class="navbar__item">
+<a href="work-culture.html">Work culture</a>
+</div>
+</div>
+</div>
+<main aria_label="Content" class="content" data-cms-content-wrapper="../_layouts/default.html">
+<div class="hero" style="background-image: url(uploads/todd-janrain-illustration-background.jpg)"></div>
+<div class="container">
+<div class="article article--with-hero">
+<div class="article__header">
+<div class="tags"></div>
+<div class="tag interviews">interviews</div>
+<h1 class="article-title">Tech support KPIs and management - interview with Todd Zabel from Janrain and Google</h1>
+<div class="author">
+<img alt="Photo of Lucy Jasper" class="author__image" src="assets/images/people/lucy.jpg">
+<div class="author__name">
+by &nbsp;
+<strong>Lucy Jasper</strong>
+</div>
+<div class="author__date">April 30, 2018</div>
+</div>
+</div>
+<div class="article__container">
+<div class="article__body" data-cms-content-wrapper="../_layouts/article.html"><p><strong>T</strong>odd Zabel has been helping customers and building support systems for more than ten years now, and he’s done it at leading companies including <a href="https://www.google.com/">Google</a>, <a href="https://www.janrain.com/">Janrain</a>, and <a href="https://www.tivo.com/">TiVo</a>.</p>
+<p>Anchoring himself at Google as a Senior Product Support Manager for Chromebooks, he moved into a Community Operations Management role and now runs the entire global support operation for Janrain.</p>
+<p>You may not have heard of Janrain before, but they’re one of the fastest growing companies in the Customer Identity and Access Management space. They help many of the leading brands of the world such as Coca-Cola, McDonald’s, Hershey’s, and QANTAS manage their most valuable assets: their customers’ identities.<br>With such a depth of knowledge within the customer support space, we had a LOT of questions. Specifically:</p>
+<ul>
+<li>How to manage global teams and their KPIs</li>
+<li>How to pitch your ideas to product teams effectively</li>
+<li>How to guarantee premium support coverage</li>
+<li>How to use chatbots - or not :)</li>
+</ul>
+<p>Before jumping into our conversation, if you like articles like this, you can also check out our interviews with support leaders at <a href="support-interview-kristin-aardsma-basecamp/index.html">Basecamp</a>, <a href="ashley-king-interview-99designs.html">99designs</a>, and <a href="interview-ben-collett-zendesk.html">Zendesk</a>. We cover many of the same topics, and it’s exciting to see all the progress everyone is making across different industries.</p>
+<p>Without further ado - meet Todd!</p>
+<h3 id="ok---to-start-with-thanks-so-much-for-joining-us">Ok - to start with, thanks so much for joining us!</h3>
+<p>I’m pleased to be invited! :-)</p>
+<h3 id="im-going-to-launch-right-in-so-maybe-first-up-lets-start-with-janrain--describe-the-business-a-little-bit">I’m going to launch right in, so maybe first up, let’s start with Janrain – describe the business a little bit.</h3>
+<p>We’re in the Customer Identity and Access Management space. The typical use case for Janrain is that an end user on a very large website like coca-cola.com, for example, signs in or signs-up using a social login like Facebook, Google, Twitter, Instagram, WeChat, or some other identity provider.</p>
+<p>The profile data that comes back from that social provider in addition to anything additional that end user might supply is stored, managed, and protected with Janrain.</p>
+<iframe allowfullscreen="" class="present-before-paste" frameborder="0" height="405" mozallowfullscreen="" src="https://player.vimeo.com/video/85402473?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen="" width="720"></iframe>
+<h4 class="present-before-paste" id="source-janrain">Source: <a href="https://vimeo.com/janrain">Janrain</a></h4>
+<p>We then take that end-user data and make it useful for our customer. For example, Coca-Cola – with Janrain, they are able to understand their customers and segments to better meet their needs and customize the experience they have on Coca-Cola-owned web and mobile properties.</p>
+<h3 id="so-would-you-say-your-target-customers-are-typically-more-enterprise">So, would you say your target customers are typically more enterprise?</h3>
+<p>We are definitely selling to the big enterprise players. Large consumer-driven companies really benefit from Janrain’s technology because of the best-in-class security, legal compliance, and tools for customizing the user experience and consuming the aggregate data in a way that drives their business forward.</p>
+<h3 id="ok-great---so-as-a-customer-support-manager-what-would-you-say-are-your-main-goals-in-supporting-clients">Ok, great - so as a Customer Support Manager, what would you say are your main goals in supporting clients?</h3>
+<p>Over time, the goals are different depending on the company’s strategic objectives, the particular challenges customer face, operational factors (costs, staffing allocation, etc.), and the stage the company is at with product/service adoption.</p>
+<blockquote>
+<p>The customer service strategy needs to complement all of these factors to enable growth and ensure the success of each individual customer.</p>
+</blockquote>
+<p>I wouldn’t employ the same support strategy, for example, with a product that was only in the hands of early adopters as I would with a company which already has mainstream consumer product adoption; the needs are different, and the support tactics and strategy have to be customized for those use cases.</p>
+<p><img alt="" src="uploads/janrain-clients1-1.jpg"></p>
+<h4 class="present-before-paste" id="source-janrain-1">Source: <a href="https://www.janrain.com/">Janrain</a></h4>
+<p>At Janrain, we have a client roster that is small enough, because we’re selling into enterprise companies, that we can cultivate personal relationships with a small group of technical and business leaders who will work closely with us to deliver a great experience to their end-users.</p>
+<h3 id="and-how-do-you-gauge-satisfaction-among-these-customers">And how do you gauge satisfaction among these customers?</h3>
+<p>So, our method for understanding how happy these customers are is primarily to just ask and have an open conversation during weekly meetings, quarterly business reviews, and in the course of ordinary ticket transactions.</p>
+<blockquote>
+<p>A CSAT score from a survey, while helpful in aggregate, doesn’t give us enough color to course correct in situations where we may not be hitting the target from the customer’s point of view.</p>
+</blockquote>
+<p>This is one of the big advantages of being in an enterprise SaaS company versus where I was at with Google. At Google, we had more than a billion users. So, I had very little contact with any individual customer or user, and having conversations with them to understand their experience at a deep-level was more difficult.</p>
+<p><img alt="" src="uploads/janrain-team-11.jpg"></p>
+<h4 class="present-before-paste" id="source-janrain-2">Source: <a href="https://www.janrain.com/">Janrain</a></h4>
+<p>Our main goal in Technical Support at Janrain is to help the developers, IT Managers, and project managers on the customer-side to be successful and to expand their implementation of Janrain, bringing more value to their business long-term.</p>
+<p>Turning issues around really fast and providing in-depth consultative answers rather than simply referring the customer to a knowledge base article or a forum – that’s what we aim for because, ultimately, we don’t want to do anything that will slow down the developers or block the customer from extracting the full value out of their relationship with Janrain.</p>
+<h3 id="then-at-the-end-of-a-month-or-the-end-of-the-quarter-you-are-kind-of-like-how-am-i-doing-how-is-my-team-doing-are-you-looking-at-some-kind-of-qualitative-score-in-terms-of-how-happy-they-are-plus-account-expansion">Then at the end of a month or the end of the quarter, you are kind of like, “How am I doing? How is my team doing?” Are you looking at some kind of qualitative score in terms of how happy they are, plus account expansion?</h3>
+<p>Yeah - so, every month we report KPIs back to our executive leadership team. For our business today, the KPIs include how many tickets came in, our SLA compliance both for initial response and resolution across different severity and priority levels, our CSAT score, the size of the backlog (how many tickets are we still working on that are unresolved at the end of the month), and our escalation rate to the Engineering team.</p>
+<p><img alt="" src="uploads/janrain-team16-1.jpg"></p>
+<h4 class="present-before-paste" id="source-janrain-3">Source: <a href="https://www.janrain.com/">Janrain</a></h4>
+<p>In our quarterly business reviews (QBR) with our customer, we go much deeper. For example, say we do a QBR with a big customer like a Coca-Cola, I’ll get about half an hour typically to present our data-driven findings and recommendations around their ticket patterns and developer challenges.</p>
+<p>The conversation might be focused on how many tickets were about mobile, what countries were tickets coming in from, which of the customer’s teams globally were submitting the most tickets, which people on those teams were submitting the most tickets, were any tickets coming in at the wrong severity level, how much time did it take to resolve different ticket types, and so on.</p>
+<blockquote>
+<p>We essentially want to know how good the service was that we provided to our enterprise customers across many different dimensions so we can continually improve by identifying and tackling any problem areas.</p>
+</blockquote>
+<p>We listen carefully to the customer during these conversations to make sure we have total alignment in terms of business objectives and a solid understanding of their team’s perception of our support program.</p>
+<p>I also create Heatmaps for our higher volume customers to show the hourly and daily inflow pattern of tickets. So, for these larger customers who have a high volume of tickets every year because of their broad expansion efforts and cool custom projects with Janrain, I show them graphically the arrival pattern of tickets from their organization by day of the week and hour of the day.</p>
+<p>From that, we often see really interesting patterns and are able to learn a lot about the business.</p>
+<p><img alt="" src="uploads/versions/janrain-heatmap---x----709-450x---.jpg"></p>
+<h4 class="present-before-paste" id="example-heatmap-from-janrain-qbrs">Example Heatmap from Janrain QBR’s.</h4>
+<p>Sometimes these results come as a surprise to our customers as well, and that always drives a fun and insightful conversation. That is really where the value is in our data-driven program - around those deep dives with the customer where we can learn about one another and work toward 100% alignment as partners.</p>
+<h3 id="you-mentioned-that-one-of-your-most-important-kpis-is-around-reducing-escalations-to-engineering-why-is-that">You mentioned that one of your most important KPIs is around reducing escalations to Engineering. Why is that?</h3>
+<p>For a company of Janrain’s size (~200 employees) who serves large enterprise and consumer customers, it’s important for us to be efficient. If our internal processes, documentation, training, and hiring programs are not well-controlled, it shifts effort to other teams, such as Engineering, to pick up the slack.</p>
+<p><img alt="" src="uploads/janrain-team11-1.jpg"></p>
+<h4 class="present-before-paste" id="source-janrain-4">Source: <a href="https://www.janrain.com/">Janrain</a></h4>
+<p>Our Engineering team is responsible for delivering on the product roadmap and running our infrastructure. If we escalate tickets to them unnecessarily, it drives up operational costs, but it also represents a big opportunity cost against our company strategy and ultimately would negatively impact our customers who end up waiting longer for new features and technology.</p>
+<p>We spend a lot of time reviewing escalations to Engineering at the end of the month to determine whether those escalations were necessary and how we could prevent them in the future by providing additional training or coaching, improving our documentation, or even modifying our hiring profile to extend to new skill sets.</p>
+<h3 id="leaning-into-that-theme-of-your-teams-operations-what-do-your-clients-expect-in-terms-of-response-times-whats-sla-compliance-for-you">Leaning into that theme of your team’s operations, what do your clients expect in terms of response times? What’s SLA compliance for you?</h3>
+<p>So, we have a tiered support offering with Bronze, Silver, Gold, and Platinum tiers. Platinum has very fast turnaround times on response (30 minutes) and resolution (4 hours), while Bronze has the slowest.</p>
+<p>Our team works directly with developers. Again, we don’t want to do anything that will slow down the development cycle for our customers, so it’s important to coach the customer into a plan that works for their particular business needs.</p>
+<h3 id="how-do-you-staff-your-different-tiers-how-is-it-all-breaking-down-among-your-team">How do you staff your different tiers? How is it all breaking down among your team?</h3>
+<p>That is a great question. We have a flat structure today across our Portland, London, and Shanghai support groups.</p>
+<p>The teams are very collaborative and are all hired according to a singular technical and customer service profile – we aim to hire talented developers or system administrators who happen to love working directly with customers.</p>
+<p><img alt="" src="blob:https://app.cloudcannon.com/292f610c-aefd-4a58-954c-ea16689c5651"><img alt="" src="uploads/janrain-tennis-team-3.jpg"></p>
+<h4 class="present-before-paste" id="source-janrain-5">Source: <a href="https://www.instagram.com/p/BhhXYkXFAdY/">@janrain</a></h4>
+<p>This structure has worked very well for us, and if we are in need of more specialized help, we can escalate to our DevOps and Engineering teams who have a higher level of access for debugging and can provide strategic advising around architecture, infrastructure, and more complex technical considerations based on their more intimate knowledge of our core application layers.</p>
+<p>Of course, there is also a big risk involved in hiring to this profile; our team members are often poached for core Engineering, Architecture, or DevOps roles after they have proven themselves in Support.</p>
+<p>We have sort of accepted this in our business as a good thing for the company, but we have a recommended tenure of one year in support before a Technical Support Engineer moves on within Janrain.</p>
+<blockquote>
+<p>Cultivating this talent and keeping it within the organization is one way that our team helps the overall operation.</p>
+</blockquote>
+<p>From a functional standpoint, we use Jira. All tickets come in through this system, and if a ticket arrives with a high severity level, it hits our PagerDuty system and will route to the region where we have staff working normal business hours for immediate triage.</p>
+<p><img alt="" src="uploads/janrain-employee-lounges1.jpg"></p>
+<h4 class="present-before-paste" id="source-janrain-6">Source: <a href="https://www.janrain.com/">Janrain</a></h4>
+<p>As I mentioned, we are currently staffed in three regions: Portland (Oregon), London, and Shanghai. So, wherever someone is on normal business hours among those three, a ticket is routed there.</p>
+<h3 id="ok-so---when-you-hire-a-technical-support-engineer-what-would-you-expect-from-them-what-would-their-kpis-be">Ok, so - when you hire a Technical Support Engineer, what would you expect from them? What would their KPIs be?</h3>
+<p>We have a set of core responsibilities that are kind of qualitative, and then we have hard metrics.</p>
+<p>For the “Core Responsibilities” layer, we talk about being an advocate for the customer and their end users at all times, being very proactive about taking tickets from the queue and looking for languishing or neglected tickets that might be in the backlog, being proactive about looking for any tickets that are misclassified, miscategorized, have incorrect ticket fields, etc., help other team members who are struggling on a ticket, and to take responsibility for training new team members if you happen to have specialized knowledge on a particular topic.</p>
+<p>We also ask them to leave documentation better than they found it. So, if a Technical Support Engineer finds a technical article that is deficient in some way in our internal knowledge base, it’s their responsibility to improve it.</p>
+<p>Finally, we require that team members treat one another and customers with respect at all times.</p>
+<p><img alt="" src="uploads/janrain-team2-1-1.jpg"></p>
+<h4 class="present-before-paste" id="source-janrain-7">Source: <a href="https://www.janrain.com/">Janrain</a></h4>
+<p>On the metrics side, we do a QA scorecard exercise every month in addition to measuring raw ticket output, SLA compliance, and CSAT scores.</p>
+<p>I have a spreadsheet tool where I give everybody in the team a sample set of tickets from every other Tech Support Engineer. They’re anonymized, and the Tech Support Engineer who is reading them gives it a score based on a variety of dimensions. You have to maintain an 85% compliance rate in that QA process every month in order to stay in good standing.</p>
+<h3 class="present-before-paste" id="that-is-cool-where-did-you-get-that-process-from-did-you-come-up-with-it">That is cool. Where did you get that process from? Did you come up with it?</h3>
+<p>Yes, we developed this process. We are regularly audited, so basically everything I’m telling you and all of the process that I have, I have had vetted by these auditors.</p>
+<p>The reason it needs to be so customized for our business is that Janrain is in the business of data privacy and security; there are many regulatory, contractual, and other legal requirements which involve strict protocols for handling customer data.</p>
+<h3 id="ok---sorry-back-to-the-qa-scorecard-does-each-engineer-qa-other-tickets-anonymously-or-who-does-the-qa">Ok - sorry, back to the QA scorecard. Does each engineer QA other tickets anonymously, or who does the QA?</h3>
+<p>It’s a peer-to-peer process. Every engineer is responsible for reading a set of tickets from every other engineer, and I then QA the QA. I spot check a subset of each one of those, and I give it back to the reviewers.</p>
+<p><img alt="" src="uploads/janrain-team-blue-1.jpg"></p>
+<h4 class="present-before-paste" id="source-janrain-8">Source: <a href="https://www.instagram.com/p/BSkEzoADzDk">@janrain</a></h4>
+<p>In the end, they all get a score for the month, and then they have an aggregate score for the year. If someone is struggling, you can see that trend emerge, and more coaching is provided.</p>
+<h3 id="if-i-can-ask-what-percent-of-someones-conversations-get-qad-each-month-roughly">If I can ask, what percent of someone’s conversations get QA’d each month, roughly?</h3>
+<p>Currently it’s around 10%.</p>
+<h3 id="that-is-a-lot">That is a lot.</h3>
+<p>Yes, this process originated as a way to course correct on some quality issues we were seeing in the past, and we’ve been pretty transparent about the fact that this process won’t scale as we grow.</p>
+<p>We will slim it down, possibly in the number of tickets to be reviewed, or make it less frequent or create some other automated QA processes. But right now, it’s working very well to control quality, and we’ve seen a significant impact in overall process compliance and ticket quality.</p>
+<p>The broader team also has a goal to hit a hundred percent SLA compliance on initial response.</p>
+<blockquote>
+<p>In order to be able to make sure we are hitting that 100% marker globally, we make it a team goal rather than an individual goal - so we avoid cherry picking tickets to satisfy our personal metrics.</p>
+</blockquote>
+<p>Also, keep in mind that we’re not in the business of sending generic canned responses to our customers; we strive to advance an investigation or otherwise add significant value to every customer interaction if we can. Automated responses do not count toward SLA compliance on our team.</p>
+<h3 id="what-were-some-of-your-kpis-at-google-within-that-team-either-for-you-or-for-the-broader-team">What were some of your KPIs at Google within that team, either for you or for the broader team?</h3>
+<p>It was really interesting. At least in my history of being at enterprise SaaS companies, you talk a lot about operational efficiency and cost and contact deflections. It’s the exact opposite at Google.</p>
+<p><img alt="" src="blob:https://app.cloudcannon.com/4e32e041-b5c4-4f36-bd4b-4830341c57eb"><img alt="" src="uploads/google-mountainview1-1.jpg"></p>
+<h4 id="source-google">Source: <a href="http://google.com/">Google</a></h4>
+<p>The most interesting thing about the way Google evaluates support, in my experience, is that they did not care very much about cost. Of course, efficiency is good, that is the icing on the cake. But during my time, what they really cared about was true customer satisfaction.</p>
+<h3 id="how-did-they-measure-that-improvement-in-customer-satisfaction">How did they measure that improvement in customer satisfaction?</h3>
+<p>Different support teams measure success differently at Google. Within their one-to-one channels, which is basically all their call centers globally, they have very standard call center KPIs – occupancy, service level, average handle time.</p>
+<p>But the emphasis is totally on the customer experience: is the customer happy? Did we answer their question correctly the first time? Did they have to wait a long time on hold? Did they get transferred? Were we able to answer their question through automation in a way that wasn’t frustrating and didn’t add extra effort to their process of getting a question answered or an issue resolved?</p>
+<p><img alt="" src="uploads/google-seattle2.jpg"></p>
+<h4 id="source-google-1">Source: <a href="http://google.com/">Google</a></h4>
+<p>Then you have the Community team where there has been a lot of experimentation with metrics over the years. Figuring out what is the best proxy for support success, not just customer satisfaction scores, but was the issue actually resolved? How many other people benefited from a publicly-posted answer? How discoverable was it? Did they have to jump into another support channel afterward, like a knowledge article or a phone support channel?</p>
+<p>People come up with really big ideas on that team that may be expensive, but the leadership’s attitude is:</p>
+<blockquote>
+<p>If you’re going to improve the customer experience and make things easier for them, then let’s do it. Unless we’re talking about some outrageous number, let’s improve it.</p>
+</blockquote>
+<p>Just as an example, customer forums for many companies are really kind of a dumping ground as a deflection tool to get people out of the costly one-to-one channels. If you can send someone over to a forum, you’ve basically saved some money and reduced headcount burden for the organization. That’s not how Google thinks, and I’ll tell you why.</p>
+<p>They have people from around the world participate in something called the <a href="https://topcontributor.withgoogle.com/">Top Contributor Program</a>, and they answer questions in the forums for Google’s users.</p>
+<p><img alt="" src="blob:https://app.cloudcannon.com/076afcac-bef2-46a8-9ad7-fbcdc09a3e0b"><img alt="" src="uploads/google-top-contributor1-1.jpg"></p>
+<h4 id="source-google-top-contributor-program">Source: <a href="https://topcontributor.withgoogle.com/">Google Top Contributor Program</a></h4>
+<p>They do it because they love Google, they want to be a part of this exciting program, and they get to use their extensive knowledge of Google’s products to help solve problems for people all over the world.</p>
+<p>We were looking at the forums as a management team saying, “Gosh, these folks are amazing. They’re participating in this program so actively. They’re adding so much value, but there are still a lot of questions that aren’t being answered. What can we do?”</p>
+<p>The answers that came up would never happen in a lot of larger companies. People in our team would say, “Let’s just send them to one-to-one channels if they don’t get an answer right away,” or “How about we hire people to answer the account-specific questions as well as the issues which require internal subject matter expertise; we really want to achieve a 100% resolution rate.”</p>
+<p><img alt="" src="blob:https://app.cloudcannon.com/952f7a3a-e8e6-4394-a530-f1d85314518a"><img alt="" src="uploads/google-sydney-1.jpg"></p>
+<h4 id="source-google-2">Source: <a href="http://google.com/">Google</a></h4>
+<p>That is a very expensive solution, and Google doesn’t need to do that, but Google really cares about the user experience. So, they invested, big time, to hire a lot of people to help answer those questions.</p>
+<blockquote>
+<p>And what’s really amazing about that is seeing how willing Google is to spend money to improve the user experience when they really don’t have to according to conventional wisdom.</p>
+</blockquote>
+<p>There is an altruistic attitude that is pervasive at Google about doing the right thing for the user.</p>
+<h3 id="how-do-you-make-the-case-currently-to-invest-in-customer-support-say-you-want-another-technical-support-engineer--if-you-need-more-dollars-from-the-top-how-do-you-make-that-case">How do you make the case currently to invest in customer support? Say you want another Technical Support Engineer – if you need more dollars from the top, how do you make that case?</h3>
+<p>You need to be very data-driven. When I came to Janrain, they asked me what my 30, 60, 90-day plan would be, and I said, “In my first 30 days, I’m not going to change anything unless something is exposing us to operational or data privacy risk.</p>
+<p>I am going to be measuring and analyzing our support operation at a very deep level and coming up with actionable insights which I will present to the leadership after my first 30 days.” And that is what I did.</p>
+<p><img alt="" src="uploads/versions/janrain-dogue---x----414-450x---.jpg"></p>
+<h4 id="source-janrain-9">Source: <a href="https://www.instagram.com/p/BKV4oQ4j29x/">@janrain</a></h4>
+<p>Going to the executive team with this extensive data and analysis and outlining the insights that I was able to get out of it with a recommendation that was built into a roadmap was a powerful way to help them understand the support business in a new way and to really understand what the challenges were and what we could do as an organization to overcome those challenges.</p>
+<p>The outcomes of this data might point to how we can improve the customer experience, how we can improve the product, how we can improve our process, or how we can save money. Any of those things might be an outcome.</p>
+<p>I don’t restrict it just to customer experience or simply to operational efficiency. How can we improve this business overall, make it scalable and make ourselves a competitive differentiator in the market?</p>
+<h3 id="do-you-have-any-tips-for-support-managers-on-how-to-influence-a-product-team-to-make-products-easier-to-use-so-that-support-volume-declines">Do you have any tips for support managers on how to influence a Product team to make products easier to use so that support volume declines?</h3>
+<p>We used to deliver presentations to new Product Support Managers at Google on this topic because it’s a really hard thing when you have somebody on the business side who is perhaps not particularly technical walk into a room of highly accomplished and technical Product Managers and Engineers and make technical recommendations.</p>
+<p>It doesn’t matter how long you have been at Google or what your background is; you have to build credibility with those teams over time, and you do that with data.</p>
+<p><img alt="" src="blob:https://app.cloudcannon.com/7de40d05-0f13-46ff-8cff-7bb23b0099f3"><img alt="" src="uploads/google-team2-1.jpg"></p>
+<h4 id="source-google-3">Source: <a href="http://google.com/">Google</a></h4>
+<p>For example, if I were presenting to a Google Product team, I might say,</p>
+<p>“We received X number of complaints from users in a certain country about a specific feature, and all of those users were running the same operating system, and 75% of them were attempting to execute a specific process at the time that the issue occurred.</p>
+<p>After evaluating their qualitative feedback, we thought this was because of root causes A, B, and C. We tested them all using the following method and found this to be true in certain cases, and we have a list of people that we could possibly reach out and talk to them more about their experience to verify whether our analysis is correct.</p>
+<p>We can also purchase this hardware or software and run usability tests internally to help shed further light on the issue. We’re happy to do any of these things. We want to get your take first.”</p>
+<p><img alt="" src="blob:https://app.cloudcannon.com/aca80a04-1895-4bfd-9d86-b43f99f20cb9"><img alt="" src="uploads/google-team3-1.jpg"></p>
+<h4 id="source-google-4">Source: <a href="http://google.com/">Google</a></h4>
+<p>Sometimes the response would be, “Wow, that’s cool. You’ve quantified all that, and it sounds like you’re on the right track. Let us know if you need help in your investigation; we’re happy to allocate an Engineer to this effort.”</p>
+<p>Or sometimes the answer would be, “Yes, actually, we know about that issue, and we’re going to fix it. Now we’ll actually prioritize it higher based on the information you’ve provided.”</p>
+<blockquote>
+<p>The idea is to attack user experience problems scientifically and to facilitate collaborative problem solving between customer-facing and development teams.</p>
+</blockquote>
+<p>Over time, you’ll build rapport and credibility with technical teams, which will ultimately be very beneficial to the user/customer experience.</p>
+<h3 id="there-is-this-growing-dialogue-probably-more-in-the-marketing-world-around-chatbots-and-bots-for-facebook-messenger-what-would-be-some-scenarios-where-you-think-automated-messaging-makes-sense">There is this growing dialogue probably more in the marketing world around chatbots and bots for Facebook Messenger. What would be some scenarios where you think automated messaging makes sense?</h3>
+<p>On our side, in an enterprise SaaS model for Janrain, I just don’t see that it’s a great approach for us – because first:</p>
+<blockquote>
+<p>We really want to have that personal connection with the relatively small number of enterprise customers who reach out to us and we want to cultivate that relationship to build trust and develop a better mutual understanding of the customer’s strategic roadmap.</p>
+</blockquote>
+<p>It’s very important to have their trust so that we can be consultative, help them with solutions, recommend expansion opportunities, and talk them through architectural considerations.</p>
+<p>Someday a chatbot will be able to do that, but today I haven’t seen it.</p>
+<blockquote>
+<p>They really don’t have that personal touch yet, or the depth of understanding across the business and technical layers in a way that builds credibility and trust with enterprise clients.</p>
+</blockquote>
+<p>The closest we get to automation with our customer service program at Janrain is simply to serve up relevant knowledge base articles during the ticket creation process.</p>
+<p>If we can possibly help a developer to get their answer through self-service and avoid waiting for a ticket response, that’s a good outcome, but we’re equally happy to work directly with them to find the right solution for their particular business.</p>
+<p>Every business requires a customized support solution. Metrics which are very meaningful within one business model may not advance company growth/ efficiency objectives for other types of businesses and products.</p>
+<p><img alt="" src="uploads/ce-insights-infographic.jpg"></p>
+<h4 class="present-before-paste" id="source-janrain-10">Source: <a href="https://www.janrain.com/resources/infographics/introducing-janrain-customer-engagement-insights">Janrain</a></h4>
+<p>So, I think my advice would be to think really carefully about what the core goals of the company are in relation to its growth stage and map those back to the support operation.</p>
+<p>If you can figure out the right operational metrics which will support those company objectives and, from there, back into the processes, policies, hiring profiles, and tools for the support team that drive those metrics up and to the right, you’ll be in a great position to add real value and to be a part of the broader company solution.</p>
+<p>Support has not traditionally been the glamour division within tech companies, but I would like to see this change.</p>
+<p>From a customer acquisition, retention, and expansion perspective, Support is on the front lines and has tremendous potential to affect positive change within the customer base while leading the way for organizations to truly understand and meet their customers’ needs.</p>
+<h3 class="present-before-paste" id="thats-great-thanks-for-your-time-todd">That’s great! Thanks for your time Todd!</h3>
+<p>Thanks for having me!</p>
+</div>
+</div>
+<hr>
+<div class="grid">
+<div class="row">
+<div class="col col--md-6">
+<div class="about-the-author">
+<h3 class="sub-heading thin">About the author</h3>
+<img alt="Photo of Lucy Jasper" class="about-the-author__image" src="assets/images/people/lucy.jpg">
+<h3 class="about-the-author__name">Lucy Jasper</h3>
+<div class="about-the-author__title"></div>
+<div class="about-the-author__description">
+<p>Lucy works at Influx. When she isn’t waxing poetic (or figuring out how to use that particular phrase in a sentence), she is probably setting unattainable health goals or grocery shopping.</p>
+</div>
+</div>
+</div>
+<div class="col col--md-6">
+<h3 class="sub-heading thin">Read these next</h3>
+
+
+<a class="related-article" href="holiday-planning-casely.html" rel="" target="">
+<div class="related-article__image" style="background-image: url(uploads/casely.jpg)"></div>
+<div class="related-article__text">
+<span class="related-article__title"> 7 steps to prepare for seasons of scale </span>
+</div>
+</a>
+<a class="related-article" href="customer-support-simplified-video.html" rel="" target="">
+<div class="related-article__image" style="background-image: url(uploads/blogtile.png)"></div>
+<div class="related-article__text">
+<span class="related-article__title"> Customer support, simplified –&nbsp;hear from three successful brands working with Influx </span>
+</div>
+</a>
+
+<a class="related-article" href="customer-first-growth-strategy-blenders.html" rel="" target="">
+<div class="related-article__image" style="background-image: url(uploads/blenders-eyewear.png)"></div>
+<div class="related-article__text">
+<span class="related-article__title"> Growing 9x focused on customers first - Interview with Lexi Horn, director of customer success at Blenders Eyewear </span>
+</div>
+</a>
+</div>
+</div>
+</div>
+<hr>
+<div class="report-signup align-center">
+<img src="assets/images/design/icon_newsletter.png" width="42">
+<h2>Stay up-to-date with the latest CX news and insights with our biweekly newsletter.</h2>
+<p>Receive top curated content straight to your inbox. Sign up now.</p>
+<script charset="utf-8" src="http://js.hsforms.net/forms/embed/v2.js" type="text/javascript"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "21171945",
+    cssClass: 'row fields',
+    submitButtonClass:'button button--orange button--stretch',
+    cssRequired: '',
+    errorClass: '',
+    errorMessageClass: '',
+    formId: "a163f042-0b5c-4116-8362-ee0ec1a7c5a0"
+  });
+</script>
+</div>
+<hr>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="grid">
+<div class="row">
+<div class="col col--xs-12 col--sm-4">
+<div class="footer__text">
+<a class="logo" href="../index.html">
+<img alt="Influx" height="32" src="assets/images/brand/logo-influx.svg">
+</a>
+<p>
+Influx provides consistent, high quality customer service in a simple month to month format. Brands and
+tech companies work with us to make their support teams fast and flexible, while maintaining standards. We
+call this support ops on demand
+</p>
+<p>
+© 2023 Influx. All rights reserved.
+</p>
+<p class="social-links">
+<a class="icon" href="https://www.linkedin.com/company/influx-inc-" target="_blank">
+<svg height="19" viewBox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M.253 18.991H4.54V6.176H.253v12.815zM2.37 4.427h.028c1.494 0 2.425-.983 2.425-2.215C4.795.956 3.893 0 2.426 0 .959 0 0 .955 0 2.212c0 1.23.932 2.215 2.37 2.215zM20 18.991h-4.287v-6.856c0-1.724-.622-2.899-2.171-2.899-1.188 0-1.891.794-2.2 1.56-.115.274-.142.655-.142 1.037v7.158H6.913s.057-11.613 0-12.815H11.2v1.818c.57-.873 1.586-2.12 3.863-2.12 2.82 0 4.937 1.831 4.937 5.77v7.347z" fill="#C5C5C5"></path></svg>
+</a>
+&nbsp;
+<a class="icon" href="https://www.youtube.com/influxdotcom" target="_blank">
+<svg height="16" viewBox="0 0 24 16" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M23.495 13.497c-.272.98-1.09 1.755-2.127 2.026C19.5 16 12 16 12 16s-7.5 0-9.382-.477a2.937 2.937 0 01-2.127-2.026C0 11.717 0 8 0 8s0-3.716.505-5.497C.777 1.523 1.595.748 2.632.477 4.5 0 12 0 12 0s7.5 0 9.382.477a2.937 2.937 0 012.127 2.026C24 4.283 24 8 24 8s0 3.716-.505 5.497zM9.546 4.619v6.762L15.818 8 9.545 4.62z" fill="#C5C5C5"></path></svg>
+</a>
+&nbsp;
+<a class="icon" href="https://twitter.com/influxdotcom" target="_blank">
+<svg height="20" viewBox="0 0 24 20" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M24 2.309a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.36a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616 0c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671.901a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.292a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.309z" fill="#C5C5C5"></path></svg>
+</a>
+&nbsp;
+<a class="icon" href="https://www.facebook.com/influxdotcom" target="_blank">
+<svg height="20" viewBox="0 0 12 20" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.2711 10.652H3.46341V19.6774C3.46341 19.8556 3.60778 20 3.78599 20H7.50313C7.68134 20 7.82571 19.8556 7.82571 19.6774V10.6945H10.346C10.5099 10.6945 10.6477 10.5716 10.6665 10.4088L11.0492 7.08609C11.0597 6.99469 11.0308 6.90313 10.9696 6.83453C10.9084 6.7659 10.8208 6.7266 10.7288 6.7266H7.82587V4.64375C7.82587 4.0159 8.16391 3.6975 8.83079 3.6975C8.92583 3.6975 10.7288 3.6975 10.7288 3.6975C10.907 3.6975 11.0514 3.55305 11.0514 3.37492V0.324961C11.0514 0.146758 10.907 0.00238281 10.7288 0.00238281H8.11302C8.09458 0.00148438 8.0536 0 7.99321 0C7.53935 0 5.96173 0.0891015 4.71552 1.23555C3.33474 2.50602 3.52669 4.02715 3.57255 4.2909V6.72652H1.27106C1.09286 6.72652 0.948486 6.8709 0.948486 7.0491V10.3294C0.948525 10.5075 1.0929 10.652 1.2711 10.652Z" fill="#C5C5C5"></path></svg>
+</a>
+</p>
+</div>
+</div>
+<div class="col col--xs-12 col--sm-2">&nbsp;</div>
+<div class="col col--xs-12 col--sm-2">
+<h4>Product</h4>
+<div class="footer__links">
+<p><a href="../solutions/how-it-works.html">How It works</a></p>
+<p><a href="../solutions/support-as-a-service.html">Support as a Service</a></p>
+<p><a href="../solutions/dedicated-support-teams.html">Dedicated support teams</a></p>
+<p><a href="../solutions/sales-assistants.html">Sales assistants</a></p>
+<p><a href="../solutions/dedicated-sales-teams.html">Sales teams on demand</a></p>
+<p><a href="../solutions/enterprise-call-centers.html">Enterprise call centers</a></p>
+<p><a href="../solutions/back-office-support.html">Back office support</a></p>
+<p><a href="../solutions.html">All solutions</a></p>
+</div>
+</div>
+<div class="col col--xs-12 col--sm-2">
+<h4>Company</h4>
+<div class="footer__links">
+<p><a href="../about-us.html">About us</a></p>
+<p><a href="../get-a-quote.html">Get a quote</a></p>
+<p><a href="../pricing.html">Pricing</a></p>
+<p><a href="../clients.html">Client testimonials</a></p>
+<p><a href="../careers.html">Careers</a></p>
+<p><a href="../privacy-policy.html">Privacy policy</a></p>
+<p><a href="../terms-of-service.html">Terms of service</a></p>
+</div>
+</div>
+<div class="col col--xs-12 col--sm-2">
+<h4>Resources</h4>
+<div class="footer__links">
+<p><a href="../blog.html">Blog</a></p>
+<p><a href="case-studies.html">Client case studies</a></p>
+<p><a href="tips-and-tutorials.html">CX tips &amp; tutorials</a></p>
+<p><a href="resources-and-guides.html">Resources &amp; guides</a></p>
+<p><a href="../integrations.html">Help desk integrations</a></p>
+<p><a href="../solutions/support-outsourcing.html">Support outsourcing</a></p>
+<p><a href="../partners.html">Partner with Influx</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="modal modal--fixed" id="report_signup_modal">
+<div class="modal__container">
+<div class="modal__dismiss-button">✕</div>
+<div class="report-signup">
+<img class="report-signup--graphic" src="assets/images/design/free_report.png">
+<h2>See how top companies are building their support teams.</h2>
+<p>Monthly updates on strategy, management and more!</p>
+<script charset="utf-8" src="http://js.hsforms.net/forms/embed/v2.js" type="text/javascript"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "21171945",
+    cssClass: 'row fields',
+    submitButtonClass:'button button--orange button--stretch',
+    cssRequired: '',
+    errorClass: '',
+    errorMessageClass: '',
+    formId: "a163f042-0b5c-4116-8362-ee0ec1a7c5a0"
+  });
+</script>
+</div>
+</div>
+</div>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WJG2TZX');</script>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-845893284"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-845893284');
+</script>
+
+<script async="" defer="" id="hs-script-loader" src="http://js.hs-scripts.com/21171945.js" type="text/javascript"></script>
+
+</body>
+<!-- Mirrored from influx.com/blog/interview-todd-zabel-janrain-google by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jul 2023 04:26:50 GMT -->
+</html>

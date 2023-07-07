@@ -1,0 +1,478 @@
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from influx.com/blog/interview-ben-collett-zendesk by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jul 2023 04:34:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http_equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link as="font" crossorigin="" href="assets/fonts/calibre-web-regular.woff2" rel="preload" type="font/woff2">
+<link as="font" crossorigin="" href="assets/fonts/calibre-web-medium.woff2" rel="preload" type="font/woff2">
+<link href="assets/main7dfc.css?1688613802" rel="stylesheet">
+<link href="feed.xml" rel="alternate" title="Customer Support Blog" type="application/rss+xml">
+<link href="../images/favicon.ico" rel="icon" type="image/png">
+<link href="http://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+<script crossorigin="anonymous" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" src="assets/javascripts/jquery-2.2.4.min.js"></script>
+<script src="assets/javascripts/navbar.js"></script>
+<script src="assets/javascripts/navbar_website.js"></script>
+<script src="assets/javascripts/campaign_monitor.js"></script>
+<title>Support Q&amp;A with Ben Collet — Director of Customer Advocacy at Zendesk — on customer success, KPIs and scaling a support team now supporting 100,000+ paying customers - Influx</title>
+<link href="interview-ben-collett-zendesk.html" rel="canonical">
+<meta content="Support Q&amp;A with Ben Collet — Director of Customer Advocacy at Zendesk — on customer success, KPIs and scaling a support team now supporting 100,000+ paying customers" name="title">
+<meta content="Ben Collet shares his support team's workflow, how they grow, and their success key metrics based on his 6-years experience." name="description">
+<meta content="influx.com" property="og:site_name">
+<meta content="Q&amp;A with Ben Collet — Director of Customer Advocacy at Zendesk - Influx" property="og:title">
+<meta content="How are the support teams structured? What are the key metrics for success? Ben Collet shares his experience." property="og:description">
+<meta content="https://influx.com/blog/interview-ben-collett-zendesk" property="og:url">
+<meta content="https://influx.com/blog/uploads/ben-collet-zendesk.jpeg" property="og:image">
+<meta content="en_US" property="og:locale">
+<meta content="@influxdotcom" name="twitter:site">
+<meta content="Q&amp;A with Ben Collet — Director of Customer Advocacy at Zendesk - Influx" name="twitter:title">
+<meta content="How are the support teams structured? What are the key metrics for success? Ben Collet shares his experience." name="twitter:description">
+<meta content="https://influx.com/blog/uploads/ben-collet-zendesk.jpeg" name="twitter:image">
+<meta content="summary_large_image" name="twitter:card">
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46032476-1', 'auto');
+  ga('send', 'pageview');
+ </script>
+
+<script type="text/javascript">
+window._vwo_code = window._vwo_code || (function(){
+var account_id=553356,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=true,
+is_spa=1,
+hide_element='body',
+
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+window.settings_timer=setTimeout(function () {_vwo_code.finish() },settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+</script>
+
+</head>
+<body class="has-navbar">
+<div class="navbar_website">
+<div class="navbar_website__container">
+<a class="navbar_website__brand" href="../index.html" title="Influx Home"></a>
+<div class="navbar_website__items navbar_website__items-main">
+<div class="navbar_website__dropdown">
+<a href="#">Customer support</a>
+<div class="navbar_website__dropdown-items">
+<a href="../solutions/dedicated-support-teams.html">Dedicated support teams</a>
+<a href="../solutions/enterprise.html">Enterprise support teams</a>
+<a href="../solutions/part-time-agents.html">Part time agents</a>
+<a href="../solutions/support-as-a-service.html">Support as a Service</a>
+<a href="../solutions/custom.html">Custom teams</a>
+</div>
+</div>
+<div class="navbar_website__dropdown">
+<a href="#">Sales</a>
+<div class="navbar_website__dropdown-items">
+<a href="../solutions/dedicated-sales-teams.html">Dedicated sales teams</a>
+<a href="../solutions/sales-assistants.html">Sales assistants</a>
+</div>
+</div>
+<div class="navbar_website__dropdown">
+<a href="#">Clients</a>
+<div class="navbar_website__dropdown-items">
+<a href="../clients.html">Client testimonials</a>
+<a href="case-studies.html">Client case studies</a>
+<div class="navbar_website__separator"></div>
+<a href="../clear-the-inbox.html">Clear the inbox</a>
+<a href="../scalable-support-operations.html">Flexible support </a>
+<a href="../24-7-coverage.html">24/7 coverage</a>
+<a href="../improve-csat.html">Improve CSAT</a>
+<a href="../brand-match.html">Perfect brand match</a>
+</div>
+</div>
+<a href="../solutions/how-it-works.html">How it works</a>
+<a href="../pricing.html">Pricing</a>
+<div class="mobile">
+<a href="https://dashboard.influx.com/sign-in">Sign in</a>
+</div>
+</div>
+<div class="navbar_website__space"></div>
+<div class="navbar_website__items desktop signed-out navbar_website__items-right">
+<a href="https://dashboard.influx.com/sign-in">Sign in</a>
+</div>
+<a class="button button--primary signed-out desktop" href="../get-a-quote.html" id="get_a_quote_button" rel="canoncial">
+Contact sales
+</a>
+<a class="button button--primary signed-in" href="https://dashboard.influx.com/" id="dashboard_button" style="display: none">
+Dashboard
+</a>
+<a class="navbar_website__toggle">
+<div class="navbar_website__toggle-icon"></div>
+</a>
+</div>
+</div>
+<div class="navbar">
+<div class="navbar__container">
+<a class="navbar__toggle">
+<span>&nbsp;</span>
+<span>&nbsp;</span>
+<span>&nbsp;</span>
+</a>
+<a class="navbar__brand " href="index.html" title="Influx Blog Home">
+
+</a>
+<h5 class="navbar__title">Filter by:</h5>
+<div class="navbar__item">
+<a href="case-studies.html">Case studies</a>
+</div>
+<div class="navbar__item">
+<a href="customer-experience.html">Customer Experience</a>
+</div>
+<div class="navbar__item">
+<a href="customer-support.html">Customer Support</a>
+</div>
+<div class="navbar__item">
+<a href="product.html">Product</a>
+</div>
+<div class="navbar__item">
+<a href="work-culture.html">Work culture</a>
+</div>
+</div>
+</div>
+<main aria_label="Content" class="content" data-cms-content-wrapper="../_layouts/default.html">
+<div class="hero" style="background-image: url(uploads/ben-collet-zendesk.jpg)"></div>
+<div class="container">
+<div class="article article--with-hero">
+<div class="article__header">
+<div class="tags"></div>
+<div class="tag interviews">interviews</div>
+<h1 class="article-title">Support Q&amp;A with Ben Collet — Director of Customer Advocacy at Zendesk — on customer success, KPIs and scaling a support team now supporting 100,000+ paying customers</h1>
+<div class="author">
+<img alt="Photo of Alex Holmes" class="author__image" src="assets/images/people/alex.jpg">
+<div class="author__name">
+by &nbsp;
+<strong>Alex Holmes</strong>
+</div>
+<div class="author__date">November 16, 2017</div>
+</div>
+</div>
+<div class="article__container">
+<div class="article__body" data-cms-content-wrapper="../_layouts/article.html"><p><a href="https://www.zendesk.com/" target="_blank">Zendesk</a> is a massive success story in the world of SaaS. They’re in the <a href="https://tomtunguz.com/zendesk-ipo/" target="_blank">upper percentile</a> in almost every business success metric while powering help desks and services for more than 100,000 paying customers.</p>
+<p>In this Q&amp;A, I interview <a href="https://www.linkedin.com/in/bencollet" target="_blank">Ben Collet</a>, Director of Global Advocacy | Enterprise and Strategic Accounts, at Zendesk. Ben has worked at Zendesk for more than six years, and he’s worked in customer facing roles for more than 20 years.</p>
+<p>How does one of the leaders in customer support provide their own customer support?</p>
+<p>That’s the underlying focus of this interview. More specifically, we cover:</p>
+<ul>
+<li>What’s the difference between customer success and advocacy?</li>
+<li>When should individuals in a support team specialize?</li>
+<li>What are the key metrics for support team success?</li>
+<li>When should a startup invest in phone support?</li>
+</ul>
+<p>And more!</p>
+<p>Quick mention — if you like interviews like this, also check out interviews with support leaders at <a href="ashley-king-interview-99designs.html">99designs</a>, <a href="case-study-vend-interview.html">Vend</a>, <a href="case-study-sendle-interview.html">Sendle</a>, and <a href="case-study-biteable-interview.html">Biteable</a>. I ask them all similar questions about team structure, success, and management.</p>
+<p>Now, the interview!</p>
+<p>&nbsp;</p>
+<h2 id="the-interview">The Interview</h2>
+<h3 id="hi-ben-thanks-for-taking-the-time-lets-start-with-describing-your-role-a-little-bit">Hi Ben, thanks for taking the time! Let’s start with describing your role a little bit.</h3>
+<p>Happy to chat! I’m the Director of Global Advocacy | Enterprise and Strategic Accounts with a focus on Enterprise Support Services inside the Customer Advocacy group.</p>
+<p>There are currently more than 300 people working in the advocacy group serving our global customer base. My team looks after our enterprise customer segment who often have unique needs from our operation.</p>
+<p>I also lead our programming for Voice of the Customer, B2B Support, Premier Support, and Developer Support.</p>
+<p><img alt="" height="417" src="uploads/zendesk-revenue-growth.png" width="567"></p>
+<h4 id="source-tom-tunguz--zendesk-ipo">Source: <a href="https://tomtunguz.com/zendesk-ipo/" target="_blank">Tom Tunguz — Zendesk IPO</a></h4>
+<h3 id="how-does-your-current-role-compare-to-when-you-first-started-at-zendesk">How does your current role compare to when you first started at Zendesk?</h3>
+<p>When I was first hired, we had 150 people total [in all of Zendesk], and 15 people in customer advocacy. Everyone was pulling their own weight answering tickets and phone calls, wearing lots of hats.</p>
+<p>These 15 people reported into a single support director position. It was a very nurturing, small, and collaborative team.</p>
+<p>We were all seen as generalists. Everyone did a bit of everything. We could all answer technical questions or escalate tickets. We even handled billing questions and worked with expired trialers as part of our regular engagement.</p>
+<h3 id="when-did-things-start-to-change">When did things start to change?</h3>
+<p>At 15,000+ paying customers, we saw two things happen. First, we didn’t solve every ticket that we received by the end of each week. Second, we were only getting to about 80% of requests within 24 hours.</p>
+<p>It was easy to see that demand was exceeding our staffing resources. We took a closer look by not focusing on overall volumes but on the quantity and duration of our longest tickets. We identified our Median Resolution Time, and looked at how many tickets we were receiving weekly above that median. Once we discovered that resolution time, we found that there was a significant and consistent volume of tickets that were really complex. We called these tickets “tank tickets.”</p>
+<p>There were also enough of these tickets to justify a single person working on them. Each person would rotate into the tank tickets every week or so. It freed up everyone else’s time so we were more available and faster at keeping pace with weekly demand.</p>
+<h3 id="what-happened-when-you-did-this">What happened when you did this?</h3>
+<p>Reply time instantly improved by a couple of hours.</p>
+<p>We learned that if one person focused on tank tickets and that they could help this much, what would happen if we had someone focus on the next increment?</p>
+<p>That’s how the teams developed. Once you have operationally justified allocating 20% (or two people of a 15 person team) in a new full time role, you may be looking at a new team — and for Zendesk that was the birth of T2 [Tier 2 Support]!</p>
+<p><img alt="" height="432" src="uploads/zendesk-gross-margin.png" width="563"></p>
+<h4 id="source-tom-tunguz--zendesk-ipo-1">Source: <a href="https://tomtunguz.com/zendesk-ipo/" target="_blank">Tom Tunguz — Zendesk IPO</a></h4>
+<h3 id="what-are-some-of-your-key-metrics">What are some of your key metrics?</h3>
+<p>It definitely depends on your portfolio. Not every industry or customer service organization subscribes to a one-size-fits-all suite of business intelligence, of course. Back when we were a startup, we initially looked at total ticket volumes as a correlation to the number of trials as a measure of our success. Over time, that correlation lost bearing on our operation and we moved on. Eventually, we solved the annual staffing model needs within 1% so we could focus on more nuanced areas of the customer experience. Today, our current KPIs center around midmarket and enterprise class operating goals like Business Impact and Customer Satisfaction.</p>
+<p>For Zendesk Advocacy, it’s about the combination of the at-the-wheels customer experience via Customer Satisfaction and operational excellence via SLA adherence. For example, we’re obligated to reply within 30 minutes on Critical Business Impact requests, so customer wait time is vitally important to meeting our commitments.</p>
+<p>I also look at customer effort — the number of touches on a ticket.</p>
+<h3 id="no-first-reply-time">No first reply time?</h3>
+<p>We worked on improving first reply time for a long time, but it ended up not being enough.</p>
+<p>Often, the reason you’re looking at first reply time is because a customer says, “What took so long?” So, you start wanting to pursue that. You want to make your operation faster.</p>
+<p>That’s what we did. As a result of a number of improvements, we saw normalized customer wait times for more than 80% of our operation. But it still wasn’t enough!</p>
+<p>Talking to customers a little bit more, we found out that when they need a fast response, it’s often something really urgent that demands immediate help. Even if you were speedy 9 out of 10 times, if that tenth request for help was urgent, we failed.</p>
+<p>So, we needed to be fast when it matters most.</p>
+<h3 id="how-did-you-build-this-into-your-support-experience">How did you build this into your support experience?</h3>
+<p>We realized that customers need the control to tell us the level of urgency for the ticket. Now, they control the urgency of the ticket when they submit a request for help.</p>
+<p>We built this tool for Priority Support customers first, and now urgency settings are built into all out-of-the-box Zendesk subscriptions.</p>
+<p>Also, letting customers participate in the operating levers builds a better relationship.</p>
+<h3 id="how-impactful-is-this-to-the-customer">How impactful is this to the customer?</h3>
+<p>Our enterprise customers enjoy a 97% CSAT score.</p>
+<h3 id="whoa-what-about-your-other-customers-how-much-volume-are-you-working-with">Whoa! What about your other customers, how much volume are you working with?</h3>
+<p>We respond to 720,000 requests per year. That’s global, with 300 Advocates.</p>
+<h3 id="how-do-you-feed-these-conversations-into-product-decisions">How do you feed these conversations into product decisions?</h3>
+<p>There lies the gold.</p>
+<p>First, you need to know about all the conversations that involve product feedback. Even with extensive training, you’ll usually only be able to flag about one-third of product feedback conversations with manual data capture methods. So you need to use a tool that allows you to have a highly accessible and qualified intake mechanism while being extremely low effort for end users to participate.</p>
+<p>Then, you need to capture the problem statements, not the solutions. The development team can build a solution that solves multiple problems. So it’s imperative for Zendesk to use machine learning which is purpose-built to help with these language-based objectives.</p>
+<p>Once you have the problem statements, you need to break your data into segments. Look at trialers, lost prospects, new customers, veteran customers, churned customers, etc. What was their product feedback? Where did the product meet them halfway, more than halfway, less than halfway?</p>
+<p>Also, you want to understand your customer voice broken down by segments. Who are your top customers? What is your base? What are their problems?</p>
+<p>Painting a picture from a Voice of Customer perspective can be terrifically insightful to your support operation for the same customer segment. Bringing together powerful business intelligence from both lenses allows for a more holistic understanding of the customer experience.</p>
+<p><img alt="" height="445" src="uploads/zendesk-net-income.png" width="584"></p>
+<h4 id="source-tom-tunguz--zendesk-ipo-2">Source: <a href="https://tomtunguz.com/zendesk-ipo/" target="_blank">Tom Tunguz — Zendesk IPO</a></h4>
+<h3 id="how-do-you-integrate-your-customer-knowledge-into-your-business-decisions">How do you integrate your customer knowledge into your business decisions?</h3>
+<p>Right now, we have a continuous cadence every quarter. This cadence matches the quarterly business reviews with our top customers. They have roadmap conversations with us.</p>
+<p>The practical reality though is that products evolve on more than a quarterly pace. So we have to balance the quarterly conversations with product releases that are often working on independent scheduling factors.</p>
+<h3 id="how-are-the-support-teams-structured-at-zendesk">How are the support teams structured at Zendesk?</h3>
+<p>Post sales, there are three main groups: Customer Success, Professional Services, and Customer Advocacy.</p>
+<p>Customer Success is localized and assigned territories as part of an intentional, customer segmented, retention strategy. They focus on aligning Zendesk usage to customer success goals. On the ground, this is expressed through the pursuit of sound product adoption through phases of the customer journey such as Launch Guidance, Mentorship Programs, etc.</p>
+<p>Professional Services caters to our customers that need expert resources in implementing Zendesk into their integrated IT landscape. By frontloading technical architecture and custom design that is future-proof for their planned growth, our customers have less friction and can focus on investing in their own customer’s success.</p>
+<p>Once the customer is launched and live, and often even throughout those phases, Customer Advocacy is the reactive, hands on, highly available 24/7, continuous technical resource. We excel at providing targeted product education and troubleshooting via an effortless omni-channel experience.</p>
+<h3 id="how-does-your-tiering-system-work">How does your tiering system work?</h3>
+<p>Tier 1 covers broad, generalist work. They give you holistic solutions. They’re great to talk to customers because they do so many things. Nearly 90% of our operation solves customer requests in this tier.</p>
+<p>Tier 2 is our specialist team. They go a bit further and tie front end behaviors to back end infrastructure. The majority of the remaining 10% of our customer requests are solved in this tier.</p>
+<p>Tier 3 solves the final % of tickets. Tier 3 is a team of our technical architects that qualify requests and partner on escalations with our Development, Operations, and Engineering Teams.</p>
+<p><img alt="" height="360" src="uploads/triage-workflow640x360.png" width="640"></p>
+<h4 id="how-triage-works-at-zendesk-supporting-720000-requests-per-year">How triage works at Zendesk, supporting 720,000 requests per year</h4>
+<h3 id="what-kind-of-volume-do-you-handle">What kind of volume do you handle?</h3>
+<p>720,000 requests per year. Of these requests, you’re only hearing from about 30–40% of customers, so most customers only engage via 10–15 conversations per year. Enterprise customers are a bit more complex and can engage with us 10–15 conversations per month.</p>
+<h3 id="what-are-some-customer-success-metrics-youd-recommend-for-a-new-saas-company-just-starting-out">What are some customer success metrics you’d recommend for a new SaaS company just starting out?</h3>
+<p>You want some kind of impact survey, something like customer effort score, customer satisfaction or NPS.</p>
+<p>You don’t want to judge your operation by the number of tickets. Instead, how many customers did you actually talk to? How many of these customers expanded with your company or churned in the same quarter as their conversation? How many prospects or trialers spoke to your support team and converted into customers? What is your cost per request? What channels are efficient and can invest in your base? What channels are costly but provide a premium and justified experience to your strategic focus?</p>
+<p>It’s important to establish a baseline early.</p>
+<h3 id="have-you-ever-worked-with-a-third-party-support-provider-when-should-a-company-work-with-one">Have you ever worked with a third party support provider? When should a company work with one?</h3>
+<p>You should look at the complexity of your product, recruiting pipelines, team culture, and volume forecasts.</p>
+<p>If your product is really accessible and easy to troubleshoot, odds are someone else can hold the line. Alternatively, if your product is complex — for example, if it takes two months to train someone up — then it’s probably too much for a third party to handle.</p>
+<p>Consider your recruiting pipeline. For example, it once took us nine months to find a person who spoke a specific language in a specific region. Third parties often have an existing operations and recruiting nets with trusted talent.</p>
+<p>If you have a healthy, strong culture in your support team, then you can supplement your staff where you need to a bit, but if you’re doing it when morale is low or when you don’t have an established vision that everyone can map to, then you will hurt your brand. The team may feel undermined.</p>
+<p>If you see non-forecastable demand [can’t predict the future], or forecastable but volatile demand [such as major product releases], then third parties can help with burst capacity or to fill in coverage gaps.</p>
+<p>I’ve seen a dramatic upturn in quality in third-party support. There are now boutique shops that offer deep, meaningful management and responses.</p>
+<p><img alt="" height="427" src="uploads/zendesk-sales-efficiency.png" width="570"></p>
+<h4 id="source-tom-tunguz--zendesk-ipo-3">Source: <a href="https://tomtunguz.com/zendesk-ipo/" target="_blank">Tom Tunguz — Zendesk IPO</a></h4>
+<h3 id="how-much-more-effective-is-phone-support-compared-to-live-chat-or-email">How much more effective is phone support compared to live chat or email?</h3>
+<p>Both email and phone are 1:1 where 1 Advocate is serving 1 Customer at a time. So the general operational efficiency is the same. At the wheels, we know that Advocates can jump in and out of tickets organically so as to maximize their time whereas phones are a concentrated exercise that require dedicated attention. Chat can see 1 Advocate handle 3 concurrent chats.</p>
+<p>With chat and phone support, I can course-correct on my approach to handling their problem immediately so I can learn in real time and move forward on the problem. Email, as a medium, has more correction volleys that span greater punctuated periods of time. So email is a better medium for issues that are not time sensitive nor complex and is more ideal for quick questions that commonly see a First Touch Resolution. So it’s important to align the right channel to the desired customer experience as part of assessing the effectiveness of the channel.</p>
+<p>Timewise, phone and email are about the same. Live chat is about three times faster than email.</p>
+<h3 id="how-do-you-train-agents-to-work-across-different-channels">How do you train agents to work across different channels?</h3>
+<p>Overall, our training investment is centered around the product. The medium is only 10% of the strategy.</p>
+<p>There is an onboarding process with new agents. We want to make sure that they’re comfortable with this process first so we start them on tickets where there is more allowance for time and validation of response quality. Once that happens, we move you to chat. Chat is a little more challenging than tickets while also a little more forgiving than phones. You can go with a minute of silence on chat, for example, without the same level of soft skill handling as a minute of dead air on a phone call.</p>
+<p>Finally, you gravitate towards phones. Once you can do phones, then you can do social media. Social media has all the same requirements, but then you’re also representing the brand. It’s not for everyone. Some folks are uncomfortable speaking to beyond 1:1 conversations. Finding the people that are energized at that prospect is the secret.</p>
+<h3 id="when-should-a-startup-invest-in-phone-support">When should a startup invest in phone support?</h3>
+<p>I’ve always come at it backwards. We offered phone support for everyone, then we started to be more selective about when to deploy it as a channel.</p>
+<p>It also depends on who you are. If you’re a startup, engagement and growth rate is everything. By talking to your customers, your support organization becomes more agile and adaptive to their experience. You’ll be more successful as a result.</p>
+<p>If you can’t do phone support for everyone, do it for your top customers. If conversion rates of prospects to customers is your focus, then offer your prospects the phone channel.</p>
+<p>Before applying company specific and support organization specific goals, a basic way to think about aligning channels to customers is like this:</p>
+<p><img alt="" height="174" src="uploads/customer-segmentation640x174.png" width="640"></p>
+<h3 id="any-signs-for-a-support-organization-that-needs-to-improve">Any signs for a support organization that needs to improve?</h3>
+<p>When you’re a support manager and you’re mostly managing escalations or fires rather than managing a proactive or positive support experience, then that’s a red flag.</p>
+<p>If your KPI’s are no longer actionable or if they don’t give you ground to improve, then it may be time for a fresh look at your goals and approach.</p>
+<p>If your attrition rate is above industry norms, then you might have an opportunity to invest in culture.</p>
+<p>If your budget team only views your organization in terms of cost, it’s up to you to pivot the conversation back to value.</p>
+<h3 id="any-solutions">Any solutions?</h3>
+<p>It can be anything. The moment you achieve one customer experience milestone, a new gap or opportunity to improve will appear. That’s what I love about the Support puzzle!</p>
+<p>At a really high level, the important thing for Customer Advocacy at Zendesk revolves around our sense of identity: We know who we are. We know our purpose and cultural values as a company and a team. We are always measuring our performance and always testing our capabilities. And we know our customers. We measure their experiences and validate our data with the rest of the business to paint a complete picture. From this position, we are able to adapt our operation to our customer experience as it evolves in an honest and straightforward way.</p>
+<p>More tactically, we tend to think of our operation in terms of People, Process, and Technology. When you have a challenge, there tends to be a prescriptive blend of those three categories that make up an optimal solution.</p>
+<p>For example, if you are using People to solve a Process or Technology problem, you might have a high attrition rate or low culture score in your employee assessment programs. If you are using Process to solve a People problem, then your customers probably feel the effort and may spend more time managing their experience than getting help. If you are using Technology to solve a People problem, then even though your internal metrics may improve, your customer experience measures may still be volatile.</p>
+<p>So, make sure to spend enough time in the problem space, not the solution space. Understand which category captures your operational challenge. Then, make sure the solution is in the same category.</p>
+<p>Most importantly though, the Zendesk formula involves Process and Technology serving People. Too often, as support teams grow and scale to meet demand, they can often allow the inverse to be true. This almost always leads to negative impacts to the customer experience.</p>
+<p>Be causal. Don’t be afraid to look at the cause for a high volume of questions as being a better product experience. I saw an Advocate see a product gap that was causing 10,000 requests a year, work with our engineers to put a button right where it needed to be, and BOOM! The cause of the transactions was addressed at the source rather than being operationalized.</p>
+<p>Be idealistic. Ask yourself what the ideal customer experience would be in a given scenario. Then shape that experience into a sustainable and practical formula. Too often we seek to identify only scalable solutions first and may not push ourselves to achieve more in the strategic exercise.</p>
+<h3 id="thanks-theres-so-much-to-learn-from-here-last-question-any-predictions-for-the-future-of-customer-support-how-will-customer-support-be-different-in-2020">Thanks! There’s so much to learn from here! Last question: Any predictions for the future of customer support? How will customer support be different in 2020?</h3>
+<p>Gartner says 85% of customers will self-serve by 2020. They’ll do this with machine learning and bots. I love that.</p>
+<p>I think that’s what’s coming. I couldn’t be happier. It means the conversation space is removed from repetitive work, and you can focus on the conversations that matter. You can take the time to help customers personalize their own experiences.</p>
+<p>Everyone’s going to benefit from a much more efficient operation at the front door.</p>
+<p>We’re going to know a lot more about our customers. We’re going to have more significant conversations.</p>
+<h3 id="thanks-for-the-taking-the-time">Thanks for the taking the time!</h3>
+<p>My pleasure, this was fun.</p>
+<p>&nbsp;</p>
+<p><br><em>If you liked this interview, check out more interviews with support leaders at <a href="support-q-a-with-ashley-king-director-of-support-at-99designs.html">99designs</a>, <a href="case-study-vend-interview.html">Vend</a>, <a href="case-study-sendle-interview.html">Sendle</a>, and <a href="case-study-biteable-interview.html">Biteable</a>. For future stories, subscribe to <a href="../research.html">Influx research and reports</a>.</em></p>
+<p><em>For more information about Influx, check out support services for <a href="../solutions/saas-customer-support.html">SaaS</a>, <a href="../solutions/ecommerce-customer-support.html">eCommerce</a>, and <a href="../solutions/startup-customer-support.html">startups</a>. Learn more about <a href="https://www.zendesk.com/support/" target="_blank">Zendesk support software here</a>.</em></p>
+<p><em>Another thanks to this <a href="https://tomtunguz.com/zendesk-ipo/" target="_blank">detailed IPO break down</a> by Tom Tunguz. I highly recommend subscribing to his <a href="https://tomtunguz.com/" target="_blank">blog</a>.</em></p>
+</div>
+</div>
+<div class="cta well">
+<div class="text">Can Support as a Service help your business?</div>
+<a class="button button--primary large button--orange" href="../get-a-quote.html">GET IN TOUCH</a>
+</div>
+<hr>
+<div class="grid">
+<div class="row">
+<div class="col col--md-6">
+<div class="about-the-author">
+<h3 class="sub-heading thin">About the author</h3>
+<img alt="Photo of Alex Holmes" class="about-the-author__image" src="assets/images/people/alex.jpg">
+<h3 class="about-the-author__name">Alex Holmes</h3>
+<div class="about-the-author__title"></div>
+<div class="about-the-author__description">
+<p>Alex runs Marketing and Client Success at Influx. He works with both existing and future clients. Favorite support experience of all time: iTunes and Optus.</p>
+</div>
+</div>
+</div>
+<div class="col col--md-6">
+<h3 class="sub-heading thin">Read these next</h3>
+
+
+<a class="related-article" href="holiday-planning-casely.html" rel="" target="">
+<div class="related-article__image" style="background-image: url(uploads/casely.jpg)"></div>
+<div class="related-article__text">
+<span class="related-article__title"> 7 steps to prepare for seasons of scale </span>
+</div>
+</a>
+<a class="related-article" href="customer-support-simplified-video.html" rel="" target="">
+<div class="related-article__image" style="background-image: url(uploads/blogtile.png)"></div>
+<div class="related-article__text">
+<span class="related-article__title"> Customer support, simplified –&nbsp;hear from three successful brands working with Influx </span>
+</div>
+</a>
+
+<a class="related-article" href="customer-first-growth-strategy-blenders.html" rel="" target="">
+<div class="related-article__image" style="background-image: url(uploads/blenders-eyewear.png)"></div>
+<div class="related-article__text">
+<span class="related-article__title"> Growing 9x focused on customers first - Interview with Lexi Horn, director of customer success at Blenders Eyewear </span>
+</div>
+</a>
+</div>
+</div>
+</div>
+<hr>
+<div class="report-signup align-center">
+<img src="assets/images/design/icon_newsletter.png" width="42">
+<h2>Stay up-to-date with the latest CX news and insights with our biweekly newsletter.</h2>
+<p>Receive top curated content straight to your inbox. Sign up now.</p>
+<script charset="utf-8" src="http://js.hsforms.net/forms/embed/v2.js" type="text/javascript"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "21171945",
+    cssClass: 'row fields',
+    submitButtonClass:'button button--orange button--stretch',
+    cssRequired: '',
+    errorClass: '',
+    errorMessageClass: '',
+    formId: "a163f042-0b5c-4116-8362-ee0ec1a7c5a0"
+  });
+</script>
+</div>
+<hr>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="grid">
+<div class="row">
+<div class="col col--xs-12 col--sm-4">
+<div class="footer__text">
+<a class="logo" href="../index.html">
+<img alt="Influx" height="32" src="assets/images/brand/logo-influx.svg">
+</a>
+<p>
+Influx provides consistent, high quality customer service in a simple month to month format. Brands and
+tech companies work with us to make their support teams fast and flexible, while maintaining standards. We
+call this support ops on demand
+</p>
+<p>
+© 2023 Influx. All rights reserved.
+</p>
+<p class="social-links">
+<a class="icon" href="https://www.linkedin.com/company/influx-inc-" target="_blank">
+<svg height="19" viewBox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M.253 18.991H4.54V6.176H.253v12.815zM2.37 4.427h.028c1.494 0 2.425-.983 2.425-2.215C4.795.956 3.893 0 2.426 0 .959 0 0 .955 0 2.212c0 1.23.932 2.215 2.37 2.215zM20 18.991h-4.287v-6.856c0-1.724-.622-2.899-2.171-2.899-1.188 0-1.891.794-2.2 1.56-.115.274-.142.655-.142 1.037v7.158H6.913s.057-11.613 0-12.815H11.2v1.818c.57-.873 1.586-2.12 3.863-2.12 2.82 0 4.937 1.831 4.937 5.77v7.347z" fill="#C5C5C5"></path></svg>
+</a>
+&nbsp;
+<a class="icon" href="https://www.youtube.com/influxdotcom" target="_blank">
+<svg height="16" viewBox="0 0 24 16" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M23.495 13.497c-.272.98-1.09 1.755-2.127 2.026C19.5 16 12 16 12 16s-7.5 0-9.382-.477a2.937 2.937 0 01-2.127-2.026C0 11.717 0 8 0 8s0-3.716.505-5.497C.777 1.523 1.595.748 2.632.477 4.5 0 12 0 12 0s7.5 0 9.382.477a2.937 2.937 0 012.127 2.026C24 4.283 24 8 24 8s0 3.716-.505 5.497zM9.546 4.619v6.762L15.818 8 9.545 4.62z" fill="#C5C5C5"></path></svg>
+</a>
+&nbsp;
+<a class="icon" href="https://twitter.com/influxdotcom" target="_blank">
+<svg height="20" viewBox="0 0 24 20" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M24 2.309a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.36a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616 0c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671.901a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.292a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.309z" fill="#C5C5C5"></path></svg>
+</a>
+&nbsp;
+<a class="icon" href="https://www.facebook.com/influxdotcom" target="_blank">
+<svg height="20" viewBox="0 0 12 20" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.2711 10.652H3.46341V19.6774C3.46341 19.8556 3.60778 20 3.78599 20H7.50313C7.68134 20 7.82571 19.8556 7.82571 19.6774V10.6945H10.346C10.5099 10.6945 10.6477 10.5716 10.6665 10.4088L11.0492 7.08609C11.0597 6.99469 11.0308 6.90313 10.9696 6.83453C10.9084 6.7659 10.8208 6.7266 10.7288 6.7266H7.82587V4.64375C7.82587 4.0159 8.16391 3.6975 8.83079 3.6975C8.92583 3.6975 10.7288 3.6975 10.7288 3.6975C10.907 3.6975 11.0514 3.55305 11.0514 3.37492V0.324961C11.0514 0.146758 10.907 0.00238281 10.7288 0.00238281H8.11302C8.09458 0.00148438 8.0536 0 7.99321 0C7.53935 0 5.96173 0.0891015 4.71552 1.23555C3.33474 2.50602 3.52669 4.02715 3.57255 4.2909V6.72652H1.27106C1.09286 6.72652 0.948486 6.8709 0.948486 7.0491V10.3294C0.948525 10.5075 1.0929 10.652 1.2711 10.652Z" fill="#C5C5C5"></path></svg>
+</a>
+</p>
+</div>
+</div>
+<div class="col col--xs-12 col--sm-2">&nbsp;</div>
+<div class="col col--xs-12 col--sm-2">
+<h4>Product</h4>
+<div class="footer__links">
+<p><a href="../solutions/how-it-works.html">How It works</a></p>
+<p><a href="../solutions/support-as-a-service.html">Support as a Service</a></p>
+<p><a href="../solutions/dedicated-support-teams.html">Dedicated support teams</a></p>
+<p><a href="../solutions/sales-assistants.html">Sales assistants</a></p>
+<p><a href="../solutions/dedicated-sales-teams.html">Sales teams on demand</a></p>
+<p><a href="../solutions/enterprise-call-centers.html">Enterprise call centers</a></p>
+<p><a href="../solutions/back-office-support.html">Back office support</a></p>
+<p><a href="../solutions.html">All solutions</a></p>
+</div>
+</div>
+<div class="col col--xs-12 col--sm-2">
+<h4>Company</h4>
+<div class="footer__links">
+<p><a href="../about-us.html">About us</a></p>
+<p><a href="../get-a-quote.html">Get a quote</a></p>
+<p><a href="../pricing.html">Pricing</a></p>
+<p><a href="../clients.html">Client testimonials</a></p>
+<p><a href="../careers.html">Careers</a></p>
+<p><a href="../privacy-policy.html">Privacy policy</a></p>
+<p><a href="../terms-of-service.html">Terms of service</a></p>
+</div>
+</div>
+<div class="col col--xs-12 col--sm-2">
+<h4>Resources</h4>
+<div class="footer__links">
+<p><a href="../blog.html">Blog</a></p>
+<p><a href="case-studies.html">Client case studies</a></p>
+<p><a href="tips-and-tutorials.html">CX tips &amp; tutorials</a></p>
+<p><a href="resources-and-guides.html">Resources &amp; guides</a></p>
+<p><a href="../integrations.html">Help desk integrations</a></p>
+<p><a href="../solutions/support-outsourcing.html">Support outsourcing</a></p>
+<p><a href="../partners.html">Partner with Influx</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="modal modal--fixed" id="report_signup_modal">
+<div class="modal__container">
+<div class="modal__dismiss-button">✕</div>
+<div class="report-signup">
+<img class="report-signup--graphic" src="assets/images/design/free_report.png">
+<h2>See how top companies are building their support teams.</h2>
+<p>Monthly updates on strategy, management and more!</p>
+<script charset="utf-8" src="http://js.hsforms.net/forms/embed/v2.js" type="text/javascript"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "21171945",
+    cssClass: 'row fields',
+    submitButtonClass:'button button--orange button--stretch',
+    cssRequired: '',
+    errorClass: '',
+    errorMessageClass: '',
+    formId: "a163f042-0b5c-4116-8362-ee0ec1a7c5a0"
+  });
+</script>
+</div>
+</div>
+</div>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WJG2TZX');</script>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-845893284"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-845893284');
+</script>
+
+<script async="" defer="" id="hs-script-loader" src="http://js.hs-scripts.com/21171945.js" type="text/javascript"></script>
+
+</body>
+<!-- Mirrored from influx.com/blog/interview-ben-collett-zendesk by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jul 2023 04:34:11 GMT -->
+</html>

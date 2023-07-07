@@ -1,0 +1,12 @@
+<style>.err      { font-size: 16px; font-family: sans-serif; background: #eee; padding: 2rem; margin: 1rem; }.err_h    { font-size: 18px; font-weight: bold; margin-bottom: 1rem }pre       { padding: 1rem; font-size: 16px; }code      { color: #000; font-weight: bold; }pre.code  { background: #fff; overflow-x: scroll; } pre.code > div { background: #fdd; }pre.trace { background: #333; color: #4C4; overflow-x: scroll; }</style><div class='err'><div class='err_h'>Connection reset by peer - SSL_connect</div><code>/app/site/templates/components/hello_bar.html.haml:</code><pre class='code'>.hello_bar
+  #{ site.hello_bar }
+  %a.close{ href: &quot;#&quot; } ×
+</pre><pre class='trace'>/app/vendor/bundle/ruby/3.1.0/gems/redis-4.4.0/lib/redis/connection/ruby.rb:260:in `connect_nonblock'
+/app/vendor/bundle/ruby/3.1.0/gems/redis-4.4.0/lib/redis/connection/ruby.rb:260:in `connect'
+/app/vendor/bundle/ruby/3.1.0/gems/redis-4.4.0/lib/redis/connection/ruby.rb:302:in `connect'
+/app/vendor/bundle/ruby/3.1.0/gems/redis-4.4.0/lib/redis/client.rb:371:in `establish_connection'
+/app/vendor/bundle/ruby/3.1.0/gems/redis-4.4.0/lib/redis/client.rb:117:in `block in connect'</pre><pre>{
+  "page": {
+    "url": "/page-not-found"
+  }
+}</pre>
